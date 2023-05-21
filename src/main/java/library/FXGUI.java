@@ -27,7 +27,8 @@ public class FXGUI extends Application {
         URL xmlUrl = getClass().getResource("primary.fxml");
         loader.setLocation(xmlUrl);
         Parent root = loader.load();
-
+        loader.setController(new PrimaryController());
+        primaryStage.setTitle("Библиотека");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

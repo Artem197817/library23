@@ -3,15 +3,31 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <VBox alignment="CENTER" prefHeight="458.0" prefWidth="492.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.PrimaryController">
    <children>
-      <BorderPane prefHeight="266.0" prefWidth="452.0">
+      <Label text="БИБЛИОТЕКА">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <BorderPane prefHeight="418.0" prefWidth="452.0">
          <top>
-            <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#buttonCatalog" text="АБОНЕМЕНТ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="КАТАЛОГ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
          </top></BorderPane>
-      <Label text="Библиотекв" />
-      <BorderPane prefHeight="200.0" prefWidth="200.0" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
