@@ -24,7 +24,7 @@ public class FXGUI extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         FXMLLoader loader = new FXMLLoader();
-        URL xmlUrl = getClass().getResource("primary.fxml");
+        URL xmlUrl = getClass().getResource("book.fxml");
         loader.setLocation(xmlUrl);
         Parent root = loader.load();
         loader.setController(new PrimaryController());
