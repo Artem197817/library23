@@ -9,4 +9,13 @@ public class SecondaryController {
     private void switchToPrimary() throws IOException {
        // App.setRoot("primary");
     }
+    public void buttonCatalog(){
+        Books.printBooks();
+    }
+    public void buttonSearch(){
+        Decor.messagePane("В разработке");
+    }
+    public void buttonIssue(){
+        ActionLibrary.bookIssue();
+    }
 }

@@ -12,4 +12,10 @@ public class PrimaryController {
     public void buttonCatalog(){
         Books.printBooks();
     }
+    public void buttonSearch(){
+        Decor.messagePane("В разработке");
+    }
+    public void buttonIssue(){
+        ActionLibrary.bookIssue();
+    }
 }
